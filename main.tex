@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CV template for ProDigital proposal
+%
+% Author: Martin Hoelzer
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS - JUST LEAVE THIS AT IS IS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\usepackage{fontspec} % For loading fonts
+\usepackage{eurosym}
+
+%% IF YOU WANT TO COMPILE THIS TEX LOCALLY, COMMENT THE FOLLOWING LINES IF THE FONTS ARE NOT INSTALLED
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Fontin-Regular.otf}[
+BoldFont       = Fontin-Bold.otf ,
+ItalicFont     = Fontin-Italic.otf ,
+SmallCapsFont  = Fontin-SmallCaps.otf ]
+%% UNTIL HERE 
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	MAIN DOCUMENT - PLEASE ENTER YOUR DATA HERE
+%
+%	Some basic LaTeX commands: 
+%
+%	A '%' marks a comment that will not be shown in the final PDF
+%	If you want to remove content, just comment the line(s) with a leading '%'
+%
+%	When you open an environment with a '{' you need to close it with a corresponding '}'!
+%
+%	\textbf{TEXT} 						makes TEXT bold font
+%	\emph{TEXT} 						makes TEXT italics font
+%	\textsc{TEXT}						makes TEXT small caps font
+%	\small \footnotesize \Huge ...		defines font sizes
+%	\begin{tabular} ... \end{tabular} 	defines a table environment
+%										inside a table environment a '&' sign splits between columns 
+%										inside a table a '\\' marks the end of a row
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty} % Removes page numbering
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{ALI AMROLLAHI}
+
+\begin{tabular}{rl}
+\textbf{Email:}   &  \href{mailto:aliamrollahiii2002@gmail.com}{Aliamrollahiii2002@gmail.com}\\
+\textbf{Github:} 					& \href{https://github.com/Aliamrol}{github.com/Aliamrol} \\  
+\textbf{linkedin:} 					& \href{https://www.linkedin.com/in/ali-amrollahi-12383022a/}{linkedin.com/Aliamrol} \\  
+\textbf{Phone:} 					& 
++989057510010 \\
+
+\end{tabular}
+\\
+%----------------------------------------------------------------------------------------
+%	SCIENTIFIC EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+%%BEGIN TABLEث
+\begin{tabular}{r|l}	
+
+\multicolumn{2}{c}{} \\	% this is just an empty row
+
+08/2021 - 08/2025\\(expected) 							& \textsc{Bachelor of Science, Computer Engineering}\\
+          							& Amirkabir University of Technology  \\
+\\
+
+\end{tabular}
+%%END TABLE
+\\
+
+
+\section{Work Experience}
+
+\begin{itemize}
+    \item \textbf{Android Engineer Freelance } Developed and released an Android application for a consulting company to assist farmers with their schedules. The application was developed using block, and cubit architectures in Flutter. 
+    \item \textbf{Android Engineer Intern in Langeek} Learned about Bloc, Cubit, Dio, Freezed, Locator, Clean Architecture, and developed a review card.
+\end{itemize}
+
+
+\section{Notable Projects}  
+
+\begin{small}
+
+\textbf{Baghmoshaver}\\
+developed and released an Android application for a consulting company to assist farmers with their schedules. The application was developed using block, and cubit architectures in Flutter. [\href{https://cafebazaar.ir/app/com.example.bagh_moshaver}{Link}]
+\end{small}
+
+\textbf{Discord}\\
+This is a demo version of a real Discord application using Java and JavaFX where you can create an account, log into
+your account, have private chats with your friends, and stay connected. Additionally, you can
+create servers, create channels and groups within the servers, and chat with a group of friends. It also
+includes features like blocking users, adding them to your friends list, and more.
+[\href{https://github.com/Aliamrol/Discord}{Link}]
+
+\textbf{Todolist}\\
+Developed a todo list application using Flutter.[\href{https://github.com/Aliamrol/Task_Manager}{Link}]
+
+\textbf{SnakeGame}\\
+Developed a snake game clone using python.[\href{https://github.com/Aliamrol/SnakeGame}{Link}]
+
+
+\section{Technical skills} 
+
+\begin{itemize}
+    \item \textbf{Languages: } Kotlin, Java, Dart, Python, Go, C
+    \item \textbf{Framework: } jetpack compose, Flutter
+    \item \textbf{Tools: } Android Studio , Git , Linux
+    \item \textbf{Familiar with} Clean Architecture, Clean Code, SOLID, Dependency Injection, RESTful API, Bloc
+\end{itemize}
+\end{document}
